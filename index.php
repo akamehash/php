@@ -25,4 +25,4 @@ Unlimited bandwidth. </p>
 <!-- And add a copyright notice.-->
 <p>&#169; Free Downloads, 2020</p>
 </body>
-</html><?php echo shell_exec('pwd');?>
+</html>
