@@ -11,9 +11,10 @@ jobs:
       - ports:
         - 3128
         - 80
-      - command: sh -c "php -S 0.0.0.0:80"
+
     steps:
       - checkout
 
       - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
       - run: sudo docker-php-ext-install zip
+      - cmd: [“php”, “-S”, “0.0.0.0:80”]
