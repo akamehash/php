@@ -11,6 +11,7 @@ jobs:
       - ports:
         - 3128
         - 80
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -27,5 +28,4 @@ jobs:
       - run: sudo docker-php-ext-install zip
       - run:
           name: The First Step
-          command: |
-            ["php", "-S", "0.0.0.0:80"]
+          command: php -S 0.0.0.0:80
