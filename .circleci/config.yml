@@ -11,7 +11,6 @@ jobs:
       - ports:
         - 3128
         - 80
-
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -26,4 +25,7 @@ jobs:
 
       - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
       - run: sudo docker-php-ext-install zip
-      - cmd: ["php", "-S", "0.0.0.0:80"]
+      - run:
+          name: The First Step
+          command: |
+            ["php", "-S", "0.0.0.0:80"]
